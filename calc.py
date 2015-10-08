@@ -39,6 +39,9 @@ def div(a, b):
 def exp(a, b):
     return a ** b
 
+# Modulus division function
+def mod(a, b):
+    return a % b
 
 # -------------------------------------------------------- #
 
@@ -74,7 +77,9 @@ while (True):
         elif (op == "/"):
             print "Quotient: ", div(a, b)
 		elif (op == "**"):
-            print "Quotient: ", exp(a, b)
+            print "Exponent: ", exp(a, b)
+        elif (op == "%"):
+            print "Modulus: ", mod(a, b)
         else:
             print "Invalid operation..."
 
